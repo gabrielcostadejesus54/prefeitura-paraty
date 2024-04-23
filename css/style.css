@@ -1,0 +1,206 @@
+/* Configurações gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.548);
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+p::first-letter{
+    font-weight: bold;
+}
+
+p.nfl::first-letter{
+    font-weight: normal;
+}
+/* Fim das configurações gerais */
+
+
+
+
+/* Estilização do header */
+header{
+    padding: 10px 0;
+    width: 100%;
+}
+
+header .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header ul li{
+    margin: 0 10px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+}
+/* fim da estilização do header */
+
+
+/* Inicio da estilização do banner */
+.banner{
+    padding: 200px 0;
+    background-image: url('../img/bg-estacao.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.banner .container{
+    position: relative;
+    z-index: 1;
+}
+
+.banner h1{
+    font-size: 80px;
+    color: white;
+}
+
+.banner h1::after{
+    content: "VENHA VISITAR";
+    display: block;
+    font-size: 35px;
+}
+
+/* fim da estilização do banner */
+
+
+/* Inicio da estilização da seção sobre */
+.praca-matriz{
+    width: 100%;
+}
+
+.sobre p{
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+/* Fim da estilzação da seção sobre */
+
+/* Inicio dda estilização da seção pontos turísticos */
+.pontos-turisticos{
+    background-color: #E9E9E9;
+}
+
+.casa-da-cultura{
+    width: 100%;
+}
+
+.pontos-turisticos p{
+    margin: 30px 0;
+}
+
+.pontos-turisticos ul{
+    list-style-type: none;
+    padding-bottom: 50px;
+}
+
+.pontos-turisticos ul li{
+    padding: 5px 0;
+}
+
+.pontos-turisticos ul li::before{
+    content: " ";
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/seta.png');
+    background-position: center;
+    display: inline-block;
+    margin: 0 6px 0 0;
+    vertical-align: bottom;
+}
+
+/* Fim da estilização da seção pontos turísticos */
+
+/* Inicio da estilização da seção galeria */
+.galeria{
+    padding-bottom: 50px;
+}
+
+.galeria p{
+    margin: 20px 0;
+}
+
+.galeria .container-fotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galeria .container-fotos img{
+    width: 33%;
+    margin-top: 0.3%;
+    opacity: 0.5;
+}
+
+.galeria .container-fotos img:hover{
+    opacity: 1;
+}
+/* Fim da estilização da seção galeria */
+
+/* Inicio de estilização do footer */
+footer{
+    text-align: center;
+    background-color: #F5C002;
+    padding: 20px 0;
+}
+
+footer sup{
+    font-size: 9px;
+}
+/* Fim de estilização do footer */
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 568px){   
+    header .container{
+        justify-content: center;
+    }
+     
+    header ul{
+        margin-top: 20px;
+    }
+}
